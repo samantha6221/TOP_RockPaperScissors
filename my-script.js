@@ -80,8 +80,7 @@ function playGame() {
   // Call playRound function
   playRound(humanSelection, computerSelection);
 
-  console.log(humanScore);
-  console.log(computerScore);
+  console.log(`${humanScore} : ${computerScore}`);
 
 }
 
@@ -90,12 +89,10 @@ for (let i = 1; i <= 5; i++) {
   playGame();
 }
 
-console.log(`${humanScore} : ${computerScore}`);
-
 if (humanScore > computerScore) {
-  console.log('Human win!');
+  console.log(`Result: ${humanScore} : ${computerScore}, Human win!`);
 } else if (humanScore < computerScore) {
-  console.log('Computer win!');
+  console.log(`Result: ${humanScore} : ${computerScore}, Computer win!`);
 } else {
-  console.log('Tie');
+  console.log(`Result: ${humanScore} : ${computerScore}, Tie!`);
 }
