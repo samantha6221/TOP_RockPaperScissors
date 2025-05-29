@@ -1,21 +1,13 @@
-// Create a getComputerChoice function
-function getComputerChoice() {
+function getComputerChoice() { 
+  const ComputerChoice = Math.floor((Math.random() * 3) + 1);
   
-  const ComputerChoice = Math.random();
-
-  // If Math.random is greater than or equal to 0 and less than 1/3, return 'rock'
-  if (ComputerChoice >= 0 && ComputerChoice < 1 / 3) {
+  if (ComputerChoice === 1) {
     return 'rock';
-  
-  // If Math.random is greater than or equal to 1/3 and less than 2/3, return 'paper'
-  } else if (ComputerChoice >= 1 / 3 && ComputerChoice < 2 / 3) {
+  } else if (ComputerChoice === 2) {
     return 'paper';
-   
-  // If Math.random is greater than or equal to 2/3 and less than 1, return 'scissors'
-  } else if (ComputerChoice >= 2 / 3 && ComputerChoice < 1) {
+  } else if (ComputerChoice === 3) {
     return 'scissors';
   }  
-
 }
 
 // Create a getHumanChoice function
