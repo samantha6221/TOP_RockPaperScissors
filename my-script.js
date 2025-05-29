@@ -10,15 +10,10 @@ function getComputerChoice() {
   }  
 }
 
-// Create a getHumanChoice function
-function getHumanChoice() {
-  
-  // Get the user's input 
+function getHumanChoice() {  
   const HumanChoice = prompt('Enter your choice');
-
-  // Return the input
-  return HumanChoice;
-
+  const HumanChoiceLower = HumanChoice.toLowerCase();
+  return HumanChoiceLower;
 }
 
 // Initialize humanScore variable
